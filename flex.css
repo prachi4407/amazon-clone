@@ -1,0 +1,116 @@
+#container{
+    border: solid;
+    height: 500px;
+    width: 500px;
+   display: flex;
+   justify-content: center;
+  align-items: flex-start;
+   flex-direction: row;
+}
+#box1{
+    border: solid;
+    height: 100px;
+    width: 100px;
+    background-color: burlywood;
+    flex-shrink: 2;
+   
+}
+#box2{
+    border: solid;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(99, 121, 219);
+    flex-grow: 1;
+}
+#box3{
+    border: solid;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(62, 187, 28);
+}
+#box4{
+    border: solid;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(28, 232, 184);
+}
+#box5{
+    border: solid;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(199, 30, 236);
+}
+div{
+    background-color: pink;
+    display:flex;
+    justify-content: space-evenly;
+    
+}
+li{
+  
+    list-style: none;
+    display: inline;
+}
+a{
+    background-color: aqua;
+}
+#outer{
+    height: 400px;
+    width: 400px;
+    background-color: rgb(62, 62, 230);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#inside{ height: 100px;
+    width: 100px;
+    background-color: aquamarine;
+}
+#deep{
+    height: 50px;
+    width: 50px;
+    background-color: hotpink;
+}
+@media(widht:600px){
+    deep{background-color: aqua;}}
+    div{
+        height: 100px;
+        width: 100px;
+        transition-property: all;
+        transition-duration:2s ;
+        transition-timing-function: ease-in-out;
+        transition-delay: 1s;
+        transition: all 2s ease-in;
+       top: 100px;
+        transform: rotate(45deg);
+        transform: scale(1,2);
+        animation-name: colouranimate;
+        animation-duration: 2s;
+        animation-direction: alternate-reverse;
+        animation-iteration-count: 3;
+       
+
+    }
+    @keyframes colouranimate{
+        from{left:0px;
+              background-color: crimson;}
+        to{left:100px;
+        background-color: darkmagenta;}
+    }
+
+div:hover{ background-color: brown;
+    color: aliceblue;
+    font-size: large;
+      transform: translateY(100px);
+      transform: skew(45deg);
+}
+div:active{
+    background-color: aqua;
+}
+.loader{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border-top: 20px;
+    border-color: black;
+}
